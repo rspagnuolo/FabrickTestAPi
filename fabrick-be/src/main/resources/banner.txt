@@ -1,0 +1,14 @@
+
+${Ansi.GREEN}
+${Ansi.GREEN}███████╗ █████╗ ██████╗ ██████╗ ██╗ ██████╗██╗  ██╗     █████╗ ██████╗ ██╗    ████████╗███████╗███████╗████████╗
+${Ansi.GREEN}██╔════╝██╔══██╗██╔══██╗██╔══██╗██║██╔════╝██║ ██╔╝    ██╔══██╗██╔══██╗██║    ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
+${Ansi.GREEN}█████╗  ███████║██████╔╝██████╔╝██║██║     █████╔╝     ███████║██████╔╝██║       ██║   █████╗  ███████╗   ██║
+${Ansi.GREEN}██╔══╝  ██╔══██║██╔══██╗██╔══██╗██║██║     ██╔═██╗     ██╔══██║██╔═══╝ ██║       ██║   ██╔══╝  ╚════██║   ██║
+${Ansi.GREEN}██║     ██║  ██║██████╔╝██║  ██║██║╚██████╗██║  ██╗    ██║  ██║██║     ██║       ██║   ███████╗███████║   ██║
+${Ansi.GREEN}╚═╝     ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝    ╚═╝  ╚═╝╚═╝     ╚═╝       ╚═╝   ╚══════╝╚══════╝   ╚═╝
+
+Application Name : ${spring.application.name}
+Application Version : ${spring.application.version}
+Application Formatted Version : ${spring.application.formatted-version}
+Spring Boot Version : ${spring-boot.version}
+Spring Boot Formatted Version : ${spring-boot.formatted-version}
