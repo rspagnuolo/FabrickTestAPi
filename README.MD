@@ -15,7 +15,7 @@ http://localhost:8080/swagger-ui.html
 TODO:
 
 - Persistence Service Method
-- Sicurity
+- Security
 - ecc...
 ---------------------------------------
 
