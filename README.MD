@@ -1,6 +1,6 @@
 # Test Fabrick Api
 
-Start procedure BankEnd :
+Start procedure BackEnd :
 
 cd Fabrick/fabrick-be
 
