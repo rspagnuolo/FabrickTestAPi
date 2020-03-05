@@ -35,3 +35,11 @@ TODO :
 
 - future implementation form and Route
 - ecc...
+
+----------------------------------
+Genaral
+
+TODO :
+- parent pom.xml for build all project 
+- Configuration Server
+- ecc...
