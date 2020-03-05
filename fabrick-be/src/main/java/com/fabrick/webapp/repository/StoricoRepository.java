@@ -1,8 +1,7 @@
 package com.fabrick.webapp.repository;
 
 import com.fabrick.webapp.entities.StoricoEntity;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Date;
 import java.util.List;
@@ -13,11 +12,8 @@ import java.util.List;
 
 
 
-public interface StoricoRepository extends PagingAndSortingRepository<StoricoEntity, Long>
+public interface StoricoRepository extends JpaRepository<StoricoEntity, String>
 {
-    List<StoricoEntity> findByOperationTypeLike(String descrizione);
-
-    List<StoricoEntity> findByOperationTypeLike(String descrizione, Pageable pageable);
 
     List<StoricoEntity> findByUserId(String userId);
 

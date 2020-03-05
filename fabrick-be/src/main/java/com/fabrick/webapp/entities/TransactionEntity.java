@@ -24,7 +24,7 @@ public class TransactionEntity  implements Serializable {
     private String payloadUid;
 
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "PAYLOAD_UID",nullable = false)
+    @JoinColumn(name = "PAYLOAD_UID",nullable = false,insertable=false, updatable=false)
     private PayloadEntity payloadEntity;
 
     @Basic
@@ -40,7 +40,7 @@ public class TransactionEntity  implements Serializable {
     private String typeUid;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "TYPE_UID", referencedColumnName = "UID")
+    @JoinColumn(name = "TYPE_UID", referencedColumnName = "UID",insertable=false, updatable=false)
     private TypeEntity typeEntity;
 
 

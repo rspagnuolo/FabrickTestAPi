@@ -22,8 +22,8 @@ public class StoricoEntity implements Serializable {
     @Column(name="PAYLOAD_TRANSACTION_UID")
     private String payloadTranscactionUid;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "PAYLOAD_TRANSACTION_UID", referencedColumnName = "UID")
+    @OneToOne(cascade = CascadeType.ALL )
+    @JoinColumn(name = "PAYLOAD_TRANSACTION_UID", referencedColumnName = "UID" ,insertable=false, updatable=false)
     private PayloadTransactionEntity payloadTransactionEntity;
 
     @Column(name="OPERATION")

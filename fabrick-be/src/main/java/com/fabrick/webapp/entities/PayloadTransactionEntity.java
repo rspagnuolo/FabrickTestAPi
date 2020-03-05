@@ -24,7 +24,7 @@ public class PayloadTransactionEntity  implements Serializable {
     private String payloadUid;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "PAYLOAD_UID", referencedColumnName = "UID")
+    @JoinColumn(name = "PAYLOAD_UID", referencedColumnName = "UID", insertable=false, updatable=false)
     private PayloadEntity payloadEntity;
 
     @Column(name="ERROR")

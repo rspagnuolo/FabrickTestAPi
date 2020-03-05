@@ -37,6 +37,9 @@ public class MoneyTransfer {
         paymentMoneyTransfers.moneyTransfers(accountId, moneyTransfersRequest);
 
     if (moneyTransfersResponse != null) {
+
+      /*TODO persist*/
+
       return moneyTransfersResponse;
     } else {
       throw new ResourceErrorException("Error ", HttpStatus.BAD_REQUEST);
