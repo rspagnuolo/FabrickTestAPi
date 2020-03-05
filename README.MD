@@ -19,7 +19,7 @@ TODO:
 - ecc...
 ---------------------------------------
 
-Start procedure FronEnd :
+Start procedure FrontEnd :
 
 Gui Angular:
 
