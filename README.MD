@@ -33,5 +33,5 @@ click link http://localhost:4200
 
 TODO :
 
-- future implementatiom  form and Route
+- future implementation form and Route
 - ecc...
