@@ -3,6 +3,7 @@ package com.fabrick.webapp.controller.server;
 import com.fabrick.webapp.exception.ResourceErrorException;
 import com.fabrick.webapp.model.json.cash.AccountBalance;
 import com.fabrick.webapp.model.json.cash.AccountTransaction;
+import com.fabrick.webapp.service.client.CashAccountManagementService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 public class CashAccountManagement {
 
   @Autowired
-  private com.fabrick.webapp.service.client.CashAccountManagement cashAccountManagement;
+  private CashAccountManagementService cashAccountManagementService;
 
   @RequestMapping(
           value = "gbs/banking/v4.0/accounts/{accountId}/balance",
@@ -27,7 +28,7 @@ public class CashAccountManagement {
   @ResponseStatus(HttpStatus.OK)
   public AccountBalance getAccountBalance(@PathVariable Long accountId){
 
-    AccountBalance accountBalance = cashAccountManagement.accountBalance(accountId);
+    AccountBalance accountBalance = cashAccountManagementService.accountBalance(accountId);
     if (accountBalance != null) {
       return accountBalance;
     } else {
@@ -41,7 +42,7 @@ public class CashAccountManagement {
   @ResponseStatus(HttpStatus.OK)
   public AccountTransaction getAccountTransaction(@PathVariable Long accountId,@RequestParam String fromAccountingDate,@RequestParam String toAccountingDate){
 
-    AccountTransaction accountTransaction = cashAccountManagement.accountTransaction(accountId,fromAccountingDate,toAccountingDate);
+    AccountTransaction accountTransaction = cashAccountManagementService.accountTransaction(accountId,fromAccountingDate,toAccountingDate);
     if (accountTransaction != null) {
       return accountTransaction;
     } else {

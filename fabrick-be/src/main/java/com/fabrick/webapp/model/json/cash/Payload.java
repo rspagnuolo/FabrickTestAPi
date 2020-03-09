@@ -7,7 +7,6 @@ package com.fabrick.webapp.model.json.cash;
 import com.fasterxml.jackson.annotation.*;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 

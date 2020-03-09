@@ -1,8 +1,8 @@
 package com.fabrick.webapp.service.client.impl;
 
+import com.fabrick.webapp.service.client.PaymentMoneyTransfers;
 import com.fabrick.webapp.model.json.payment.MoneyTransfersRequest;
 import com.fabrick.webapp.model.json.payment.MoneyTransfersResponse;
-import com.fabrick.webapp.service.client.PaymentMoneyTransfers;
 import com.fabrick.webapp.utility.InitHeaders;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

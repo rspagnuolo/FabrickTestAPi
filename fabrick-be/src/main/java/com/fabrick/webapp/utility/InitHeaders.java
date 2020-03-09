@@ -1,6 +1,5 @@
 package com.fabrick.webapp.utility;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 
 /** @author Spagnuolo Roberto on 03/03/20 */

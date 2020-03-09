@@ -2,7 +2,7 @@ package com.fabrick.webapp.service.client.impl;
 
 import com.fabrick.webapp.model.json.cash.AccountBalance;
 import com.fabrick.webapp.model.json.cash.AccountTransaction;
-import com.fabrick.webapp.service.client.CashAccountManagement;
+import com.fabrick.webapp.service.client.CashAccountManagementService;
 import com.fabrick.webapp.utility.InitHeaders;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +24,7 @@ import java.util.Map;
 
 @Service
 @Transactional(propagation = Propagation.REQUIRES_NEW)
-public class CashAccountManagementImpl implements CashAccountManagement {
+public class CashAccountManagementImpl implements CashAccountManagementService {
 
   private static final Logger log = LoggerFactory.getLogger(CashAccountManagementImpl.class);
 

@@ -9,5 +9,5 @@ import com.fabrick.webapp.model.json.payment.MoneyTransfersResponse;
 
 public interface PaymentMoneyTransfers {
 
-    MoneyTransfersResponse moneyTransfers(Long accountId , MoneyTransfersRequest moneyTransfersRequest);
+    MoneyTransfersResponse moneyTransfers(Long accountId, MoneyTransfersRequest moneyTransfersRequest);
 }

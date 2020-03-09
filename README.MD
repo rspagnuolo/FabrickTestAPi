@@ -2,9 +2,11 @@
 
 Start procedure BackEnd :
 
-cd Fabrick/fabrick-be
+cd Fabrick
 
 mvn clean install
+
+cd Fabrick/fabrick-be
 
 mvn spring-boot:run
 
@@ -16,6 +18,7 @@ TODO:
 
 - Persistence Service Method
 - Security
+- Make All UnitTest
 - ecc...
 ---------------------------------------
 
@@ -27,9 +30,9 @@ cd Fabrick/fabrick-fe/src/main/web
 
 npm install
 
-ng serve
+npm install -g typescript
 
-click link http://localhost:4200 
+http://localhost:8080/
 
 TODO :
 

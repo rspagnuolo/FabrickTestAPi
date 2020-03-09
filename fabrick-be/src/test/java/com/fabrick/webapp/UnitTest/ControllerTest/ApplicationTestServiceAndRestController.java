@@ -3,7 +3,7 @@ import com.fabrick.webapp.UnitTest.AbstractTest;
 import com.fabrick.webapp.model.json.cash.AccountBalance;
 import com.fabrick.webapp.model.json.payment.MoneyTransfersRequest;
 import com.fabrick.webapp.model.json.payment.MoneyTransfersResponse;
-import com.fabrick.webapp.service.client.CashAccountManagement;
+import com.fabrick.webapp.service.client.CashAccountManagementService;
 import com.fabrick.webapp.service.client.PaymentMoneyTransfers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -34,7 +34,7 @@ public class ApplicationTestServiceAndRestController extends AbstractTest {
       Logger.getLogger(ApplicationTestServiceAndRestController.class);
       private static final String PATH_FILE_NAME = "/json/moneyTransferRequest.json";
 
-  @Autowired private CashAccountManagement cashAccountManagement;
+  @Autowired private CashAccountManagementService cashAccountManagement;
   @Autowired private PaymentMoneyTransfers paymentMoneyTransfers;
 
   @Override
@@ -122,6 +122,9 @@ public class ApplicationTestServiceAndRestController extends AbstractTest {
 
     logger.info(mvcResult.getResponse().getContentAsString());
   }
+
+
+  /* TODO */
 
   /** End WebService Rest Test */
 
